@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentic Mexican Delights</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .about-service {
+            padding: 50px 0;
+        }
+
+        .mexican-dish-img {
+            width: 400px;
+            height: 400px;
+            animation: rotateImage 30s linear infinite;
+        }
+
+        /* Keyframes for rotation */
+        @keyframes rotateImage {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .mexican-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: gold;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .mexican-tagline {
+            font-size: 1rem;
+            font-weight: bold;
+            color: tomato;
+            margin-bottom: 20px;
+        }
+
+        .mexican-menu h6 {
+            color: #000;
+            font-family: "Pacifico", cursive;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .mexican-menu p {
+            color: #000;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .event-contact {
+            margin-top: 20px;
+        }
+
+        .event-contact h4 {
+            font-size: 1.2rem;
+            color: #FFD700;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .event-contact a {
+            color: tomato;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+
+        .event-contact a:hover {
+            color: rgb(255, 40, 2);
+        }
+
+        .mexican-preview-img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .preview-label {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1200px) {
+            .mexican-dish-img {
+                width: 350px;
+                height: 350px;
+            }
+
+            .mexican-title {
+                font-size: 2.2rem;
+            }
+
+            .mexican-preview-img {
+                height: 110px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .mexican-dish-img {
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+                display: block;
+            }
+
+            .mexican-title {
+                font-size: 2rem;
+            }
+
+            .mexican-tagline {
+                text-align: center;
+            }
+
+            .event-contact {
+                text-align: center;
+            }
+
+            .mexican-preview-img {
+                height: 150px;
+            }
+
+            .preview-label {
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-service {
+                padding: 30px 0;
+            }
+
+            .mexican-dish-img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .mexican-title {
+                font-size: 1.8rem;
+            }
+
+            .mexican-tagline {
+                font-size: 0.9rem;
+            }
+
+            .event-contact h4 {
+                font-size: 1.1rem;
+            }
+
+            .mexican-preview-img {
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .mexican-dish-img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .mexican-title {
+                font-size: 1.5rem;
+            }
+
+            .mexican-tagline {
+                font-size: 0.8rem;
+            }
+
+            .event-contact h4 {
+                font-size: 1rem;
+            }
+
+            .event-contact a {
+                font-size: 0.9rem;
+            }
+
+            .mexican-preview-img {
+                height: 100px;
+            }
+
+            .preview-label {
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .mexican-dish-img {
+                width: 180px;
+                height: 180px;
+            }
+
+            .mexican-title {
+                font-size: 1.3rem;
+            }
+
+            .mexican-menu {
+                font-size: 0.7rem;
+            }
+
+            .mexican-preview-img {
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="about-service container position-relative px-3">
+        <div class="row align-items-center">
+            <!-- Mexican Dish Image -->
+            <div class="col-lg-4 col-md-12 text-center">
+                <img src="assets/img/about/exquisite-restaurant.png" alt="Mexican Dish Image" class="mexican-dish-img">
+            </div>
+
+            <!-- Text Section -->
+            <div class="col-lg-4 col-md-12 py-3">
+                <p class="mexican-tagline"> Where Every Event Tastes Like Home </p>
+                <h2 class="mexican-title">Asli Pak Punjab Catering Service</h2>
+                <div class="mexican-menu py-2">
+                    <p class="pb-2">We also provide private and corporate catering services:</p>
+
+                    <h6><span style="color: tomato;padding-right: 5px;">✦</span> Birthday Parties </h6>
+                    <h6><span style="color: tomato;padding-right: 5px;">✦</span> Wedding Ceremonies </h6>
+                    <h6><span style="color: tomato;padding-right: 5px;">✦</span> Anniversaries </h6>
+                    <h6><span style="color: tomato;padding-right: 5px;">✦</span> Seasonal Festivals </h6>
+                    <h6><span style="color: tomato;padding-right: 5px;">✦</span> Grand Openings </h6>
+                    <h6><span style="color: tomato;padding-right: 5px;">✦</span> Annual Dinners </h6>
+                    <h6><span style="color: tomato;padding-right: 5px;">✦</span> Corporate Event Catering </h6>
+                    <h6><span style="color: tomato;padding-right: 5px;">✦</span> And Many More... </h6>
+
+                </div>
+                <div class="event-contact">
+                    <h4>PLANNING AN EVENT?</h4>
+                    <a href="#">Contact Us Now</a>
+                </div>
+            </div>
+
+            <!-- Preview Images -->
+            <div class="col-lg-4 col-md-12">
+                <div class="row">
+                    <div class="col-6 col-md-12 mb-3 position-relative">
+                        <img src="assets/img/about/menu.jpg" alt="Menu" class="mexican-preview-img">
+                        <span class="preview-label">Menu</span>
+                    </div>
+                    <div class="col-6 col-md-12 mb-3 position-relative">
+                        <img src="assets/img/about/reservation.webp" alt="Reservation" class="mexican-preview-img">
+                        <span class="preview-label">Reservation</span>
+                    </div>
+                    <div class="col-12 position-relative">
+                        <img src="assets/img/about/event.jpg" alt="Events" class="mexican-preview-img">
+                        <span class="preview-label">Events</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
